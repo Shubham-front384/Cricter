@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+  font-family: monospace;
+  font-size: 14px;
+}
+
+main, section {
+  width: 100%;
+  height: 100%;
+}
+
+section {
+  background: #FFC400;
+  color: #1a1a1a;
+  padding: 1.5rem;
+  position: relative;
+}
+
+.ipl-info .ipl-heading {
+  text-transform: uppercase;
+  font-size: 5rem;
+  color: #1F2F57;
+}
+
+.trophy-details {
+  width: 200px;
+  position: absolute;
+  bottom: 1.5rem;
+  border-radius: 15px;
+  display: grid;
+  place-items: center;
+}
+
+.trophy-details .ipl-trophy {
+  width: 100px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: .5rem;
+}
+
+.trophy-details .ipl-trophy img {
+  width: 50px;
+}
+
+.trophy-details .ipl-trophy .trophy-year {
+  font-size: 1.25rem;
+  color: #fafafa;
+}
+
+.captain-img {
+  position: absolute;
+  z-index: 1;
+  bottom: 1.2rem;
+  left: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ipl-info .logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 42rem;
+  height: 100%;
+}
+
+.ipl-team {
+  width: 20%;
+  padding: 1rem;
+  border-radius: 15px;
+  background: tomato;
+  position: absolute;
+  right: 1.5rem;
+  top: 3rem;
+}
+
+.ipl-team .ipl-name {
+  font-size: 1rem;
+  color: #fafafa;
+  text-align: center;
+  margin: .5rem 0;
+}
+
+.ipl-btn {
+  position: absolute;
+  bottom: 1.5rem;
+  right: 1.5rem;
+}
+
+.ipl-btn button {
+  padding: 1rem 3rem;
+  border: none;
+  background: #1F2F57;
+  border-radius: 15px;
+  color: #fafafa;
+  text-transform: capitalize;
+  font-size: 1.25rem;
+  width: fit-content;
+  cursor: pointer;
+}
+
+.ipl-btn button:active {
+  scale: 0.9;
+}
